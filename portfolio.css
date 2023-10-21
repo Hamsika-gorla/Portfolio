@@ -1,0 +1,161 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(128, 202, 229, 0.119);
+}
+
+#navbar {
+    display: flex;
+    background-color: rgb(170, 170, 235);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 50px;
+    justify-content: space-between;
+    /* position: sticky; */
+}
+
+#name {
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+#name img {
+    /* padding: 8px; */
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+
+ ul {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin: 0px;
+}
+ul li {
+    margin: 10px;
+    padding: 5px;
+}
+a {
+    text-decoration: none;
+}
+ul li button {
+    padding: 2px 8px;
+    background-color: rgb(150, 68, 182);
+    border-radius: 8%;
+    margin-right: 20px;
+}
+#nav-acheivements:hover , #nav-about:hover {
+    background-color: rgb(224, 191, 236);
+    border: 2px solid black;
+    /* width: 22%; */
+}
+#nav-acheivements:hover .achievements , #nav-about:hover .about {
+    display: block;
+}
+
+.dropdown {
+    /* width: 10%;
+    border: 2px solid black;
+    display: block;
+    background-color: rgba(137, 43, 226, 0.153); */
+    margin-top: 8px;
+    border-top: 2px solid black;
+    display: none;
+}
+.dropdown ul {
+    display: block;
+    padding: 2px;
+    margin: 0px;
+}
+.dropdown ul li {
+    list-style: none;
+    /* border: 1px solid black; */
+    margin: 0px;
+}
+.achievements ul li:hover {
+    background-color: rgb(185, 177, 195);
+}
+
+.main {
+    margin: 50px 150px 20px 150px;
+    border: 1px solid black;
+    /* display: flex; */
+}
+
+.profile-heading {
+   padding: 0px 20px 9px 20px;
+   margin: 0px 15px;
+   font-size: 20px;
+}
+
+.main-content {
+    display: flex;
+}
+.main .info {
+   padding: 20px;
+   margin: 4px 15px;
+}
+.projects , .internships , .skills , .edu {
+   display: none;
+} 
+#intern-class {
+    margin-top: 40px;
+}
+.box-item {
+    border: 2px solid black;
+    margin: 25px;
+    padding: 25px;
+    width: 27%;
+}
+.box {
+    display: flex;
+    margin: 0px 100px;
+}
+
+button {
+    background-color: rgba(100, 172, 100, 0.705);
+    padding: 8px;
+    border-radius: 5px;
+}
+.modal {
+    width: 50%;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    padding: 0px;
+    display: none;
+}
+.modal ul {
+    display: block;
+}
+
+.modal-nav {
+    background-color: rgba(131, 85, 174, 0.459);
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid black;
+}
+.modal-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+.modal-nav ul li {
+    margin: 0px;
+    padding: 5px;
+    font-size: 18px;
+}
+.modal-nav button {
+    /* float: right; */
+    margin: 0px !important;
+    background-color: rgb(204, 135, 135);
+    border-radius: 4px;
+}
+button, #name {
+    cursor:pointer;
+}

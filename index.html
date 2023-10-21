@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+              $("#pro").click(function(){
+                $(".main-content").hide();
+                $(".profile").show();
+              });
+              $("#name").click(function(){
+                $(".main-content").hide();
+                $(".profile").show();
+              });
+            });
+            
+    </script>
+    <script src="events.js"></script>
+</head>
+<body>
+    <div class="body">
+    <!--Navbar-->
+    
+    <nav id="navbar">
+       <div id="name">
+        <ul>
+            <img src="images/logo.png" alt="profile-picture-logo" height="30px" width="30px" style="padding:0px; margin:9px;" />
+            <li style="margin-left: 0px; padding-left:1px; font-size:18px;"><strong>Gorla Hamsika</strong></li>
+        </ul>
+       </div>
+       <div class="details">
+        <ul>
+          <li><a href="https://linkedin.com/in/hamsika-yadav-682b761a9" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Hamsika-gorla" target="_blank">GitHub</a></li>
+          <li id="nav-acheivements"><a class="nav-header">Achievments</a>
+            <!--dropdown for achievements-->
+            <div class="dropdown achievements">
+             <ul>
+              <li><a href="https://drive.google.com/drive/u/1/folders/1X_WkMhaM4mwS0_1AJk3HYkLiU5kb4R59">Certificates</a></li>
+              <li><a href="https://www.jetir.org/papers/JETIR2206003.pdf">Research Papers</a></li>
+             </ul>
+            </div>
+          </li>
+          <li id="nav-about"><a class="nav-header">About</a>
+              <!--dropdown for about-->
+              <div class="dropdown about">
+                <ul>
+                  <li>Gorla Hamsika</li>
+                  <li>Frontend Developer</li>
+                  <li>hamsikagorla@gmail.com</li>
+                  <li>8008731950</li>
+                </ul>
+              </div>
+            </li>
+          <li><button id="pro">Profile</button></li>
+        </ul>
+       </div>
+    </nav>
+
+    <!--Main section-->
+    <div class="main">
+        <div class="profile main-content">
+            <div class="profile-heading">
+                <h1>Profile</h1>
+                <img src="images/logo.png" alt="profile-photo" height="100px" width="90px" />
+            </div>
+            <div class="info">
+                <h1>Gorla Hamsika</h1>
+                <h3>Frontend Developer</h3>
+                <button class="contact-me-btn">Contact me</button>
+            </div>
+        </div>
+        <div class="projects main-content">
+            <div class="profile-heading">
+                <h1>Projects</h1>
+                <img src="images/projects.png" alt="project-logo" height="100px" width="90px" />
+            </div>
+            <div class="info">
+                <div><h2>Recreation of AngelList homepage</h2>
+                    <p>Using HTML & CSS ( Static homepage)</p>
+                </div>
+                <div>
+                    <h2>Fake news detection</h2>
+                    <p>Using Python & ML techniques</p>
+                </div>
+                <div>
+                    <h2>MichaelKors AboutKors page clone</h2>
+                    <p>Using HTML & CSS ( Static page)</p>
+                </div>
+            </div>
+        </div>
+        <div class="internships main-content">
+            <div class="profile-heading">
+                <h1>Internships</h1>
+                <img src="images/internshipslogo.png" alt="internship-logo" height="100px" width="90px" />
+            </div>
+            <div class="info">
+              <div>
+                <h2>Automation Testing Intern at <em>OpenText</em></h2>
+                <p>March 2022 – September 2022</p>
+              </div>
+              <div id="intern-class">
+                <h2>SEO Intern at <em>Xpert Magazine</em></h2>
+                <p>May 2020 – June 2020</p>
+              </div>
+            </div>
+        </div>
+        <div class="skills main-content">
+            <div class="profile-heading">
+                <h1>Skills</h1>
+                <img src="images/skills-logo.png" alt="skills-logo" height="100px" width="90px" />
+            </div>
+            <div class="info">
+                <h3>Frontend Fundamentals - HTML , CSS , Bootstrap </h3>
+                <h3>JavaScript</h3>
+                <h3>Angular, React</h3>
+                <h3>C programming</h3>
+                <h3>RDBMS</h3>
+                <h3>Java</h3>
+                <h3>Jquery</h3>
+                <h3>Selenium tool</h3>
+                <h3>Image & Video Editing - Canva</h3>
+            </div>
+        </div>
+        <div class="edu main-content" style="display: none;">
+            <div class="profile-heading">
+                <h1>Education</h1>
+                <img src="images/education-logo.png" alt="education-logo" height="100px" width="90px" />
+            </div>
+            <div class="info">
+                <h2>BE - Information Technology</h2>
+                <h3>Stanley college of engineering & technology for women, Hyderabad</h3>
+                <p>(affiliated to Osmania university)<br><br>
+                    CGPA : 8.88 /10</p>
+            </div>
+        </div>
+    </div>
+    <!--boxes which displays each field-->
+    <div class="box">
+        <div class="box-item">
+            <img src="images/projects.png" alt="projects-logo" width="20px" height="20px" />
+            <h2>Projects</h2>
+            <button class="project-btn">Show me</button>
+        </div>
+        <div class="box-item">
+            <img src="images/internshipslogo.png" alt="internships-logo" width="20px" height="20px" />
+            <h2>Internships</h2>
+            <button class="intern-btn">Show me</button>
+        </div>
+        <div class="box-item">
+            <img src="images/skills-logo.png" alt="skills-logo" width="20px" height="20px" />
+            <h2>Skills</h2>
+            <button class="skills-btn">Show me</button>
+        </div>
+        <div class="box-item">
+            <img src="images/education-logo.png" alt="edu-logo" width="20px" height="20px" />
+            <h2>Education</h2>
+            <button class="edu-btn">Show me</button>
+        </div>
+    </div>
+  </div>
+    <!--Modal for contact me-->
+    <div class="modal">
+       <strong><div class="modal-nav">
+            <ul>
+                <li><a>Contact Me</a></li>
+                <li><button class="close">x</button></li>
+            </ul>
+        </div>
+        <ul>
+            <li>Gorla Hamsika</li>
+            <li><a href="https://linkedin.com/in/hamsika-yadav-682b761a9">Linked In</a></li>
+            <li>hamsikagorla@gmail.com</li>
+            <li>8008731950</li>
+        </ul></strong> 
+    </div>
+</body>
+</html>
